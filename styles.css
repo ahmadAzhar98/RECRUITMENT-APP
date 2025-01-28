@@ -1,0 +1,307 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    padding: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.hero {
+    text-align: center;
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero .btn {
+    background-color: #fff;
+    color: #5cb85c;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.job-opportunities .job-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-opportunities .job-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us form label {
+    margin-bottom: 5px;
+}
+
+.contact-us form input,
+.contact-us form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-us form button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alert {
+            padding: 15px;
+            background-color: red; /* Red background */
+            color: white; /* White text */
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+.alert-close {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 20px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+.alert-close:hover {
+            color: black;
+        }
+
+table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.filter-btn {
+    display: block;
+    margin: 10px auto;
+}
+
+        .chat-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .chat-header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .chat-messages {
+            height: 400px;
+            overflow-y: scroll;
+            padding: 10px;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f1f0f0;
+            clear: both;
+        }
+
+        .message .sender {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .message .content {
+            margin-left: 10px;
+        }
+
+        .message .time {
+            float: right;
+            color: #aaa;
+            font-size: 12px;
+        }
+
+        .chat-input {
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+        }
+
+        .chat-input input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        .chat-input button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+        }
+
+        .chat-input input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+        }
+
+        .chat-input button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+        }
+
+.form-wrapper {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+select, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+select:focus, input[type="submit"]:focus {
+            border-color: #66afe9;
+            outline: none;
+        }
+input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        

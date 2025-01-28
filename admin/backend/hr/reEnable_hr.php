@@ -1,0 +1,41 @@
+<?php
+
+include "../../../dbconfig.php";
+session_start();
+
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+if (isset($_GET['hr_id'])) {
+    $userId = intval($_GET['hr_id']);
+    
+    // Prepare the SQL query
+    $query_users = "UPDATE users SET is_enable = ? WHERE user_id = ?";
+    $stmt_users = $conn->prepare($query_users);
+    
+    // Check if the preparation was successful
+    if ($stmt_users === false) {
+        echo "Error preparing statement: " . $conn->error;
+        exit();
+    }
+    
+    // Bind parameters
+    $isEnable = 1;
+    $stmt_users->bind_param('ii', $isEnable, $userId);
+    
+    // Execute the statement
+    if ($stmt_users->execute()) {
+        echo "<script>alert('Hr successfully enabled'); window.location.href='disable_hrs.php';</script>";
+    } else {
+        echo "Error updating profile: " . $stmt_users->error;
+    }
+    
+    // Close the statement and connection
+    $stmt_users->close();
+    $conn->close();
+} else {
+    echo "Invalid request: User ID not provided.";
+}
+?>
+
